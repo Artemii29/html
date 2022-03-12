@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Подбор квартиру</title>
+</head>
+<body>
+<h1>Подбор квартиры для клиента</h1>
+<form>
+    <label for="town">Введите район</label>
+    <input type="text" id="town">
+    <br><br>
+<label for="street" type="text">Введите станцию метро или улицу</label>
+<input type="text" id="street">
+    <br><br>
+<label for="number">Выберите количество комнат</label>
+    <select id="number">
+        <optgroup label="Комнаты">
+            <option value="0">Студия</option>
+            <option value="1">Однакомнатная</option>
+             <option value="2">Двухкомнатные</option>
+             <option value="3">Трехкомнатные</option>
+             <option value="4">Четырехкомнатные</option>
+            <option value="5">Пятикомнатные</option>
+        </optgroup>
+    </select>
+    <br><br>
+    <label for="year">Выберите год сдачи дома</label>
+    <select id="year">
+            <optgroup label="Год сдачи дома">
+                <option value="2015">2015</option>
+                <option value="2016">2016</option>
+                <option value="2017">2017</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+            </optgroup>
+    </select>
+    <br><br>
+    <label for="maxsumm">Укажите максимальную стоимость</label>
+    <input type="number" id="maxsumm">
+    <br><br>
+    <label for="S">Укажите площадь квартиры</label>
+    <input  type="number" id="S">
+    <fieldset>
+        <legend>Отделка</legend>
+        <label>
+            <input type="radio" name="remont" value="1">
+            С отделкой
+        </label>
+        <label>
+            <input type="radio" name="remont" value="2">
+            Без отделки
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Терасса</legend>
+        <label>
+            <input type="radio" name="terasa" value="3">
+            С Терассой
+        </label>
+        <label>
+            <input type="radio" name="terasa" value="4">
+            Без терассы
+        </label>
+    </fieldset>
+    <fieldset>
+        <legend>Выберите класс</legend>
+        <label>
+
+            <input type="checkbox" name="class" value="business">
+            бизнес-класс
+        </label>
+        <label>
+            <input type="checkbox" name="class" value="premium">
+            премиум
+        </label>
+        <label>
+
+            <input checked type="checkbox" name="class" value="deluxe">
+            deluxe
+        </label>
+    </fieldset>
+        <label for="floor">Выберите этаж</label>
+            <select id="floor">
+                <optgroup disabled label="Первый этаж"></optgroup>
+                <option value="2">Второй этаж</option>
+                <option value="3">Третий этаж</option>
+                <option value="4">Четвертый этаж</option>
+                <option value="5">Пятый этаж</option>
+                <option value="6">Шестой этаж</option>
+                <option value="7">Седьмой этаж</option>
+                <option value="8">Восьмой этаж</option>
+                <option value="5">Девятый этаж</option>
+                <optgroup disabled label="Десятый этаж"></optgroup>
+            </select>
+</form>
+        <br>
+        <div>
+            <button type="submit">Отправить заявку</button>
+        </div>
+</body>
+</html>
