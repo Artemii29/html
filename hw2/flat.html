@@ -8,10 +8,10 @@
 <h1>Подбор квартиры для клиента</h1>
 <form>
     <label for="town">Введите район</label>
-    <input type="text" id="town">
+    <input type="text" id="town" name="town">
     <br><br>
-<label for="street" type="text">Введите станцию метро или улицу</label>
-<input type="text" id="street">
+<label for="street" >Введите станцию метро или улицу</label>
+<input type="text" id="street" name="street">
     <br><br>
 <label for="number">Выберите количество комнат</label>
     <select id="number">
@@ -39,10 +39,10 @@
     </select>
     <br><br>
     <label for="maxsumm">Укажите максимальную стоимость</label>
-    <input type="number" id="maxsumm">
+    <input type="number" id="maxsumm" name="maxsum">
     <br><br>
     <label for="S">Укажите площадь квартиры</label>
-    <input  type="number" id="S">
+    <input  type="number" id="S" name="S">
     <fieldset>
         <legend>Отделка</legend>
         <label>
@@ -69,21 +69,21 @@
         <legend>Выберите класс</legend>
         <label>
 
-            <input type="checkbox" name="class" value="business">
+            <input type="checkbox" name="class[]" value="business">
             бизнес-класс
         </label>
         <label>
-            <input type="checkbox" name="class" value="premium">
+            <input type="checkbox" name="class[]" value="premium">
             премиум
         </label>
         <label>
 
-            <input checked type="checkbox" name="class" value="deluxe">
+            <input checked type="checkbox" name="class[]" value="deluxe">
             deluxe
         </label>
     </fieldset>
         <label for="floor">Выберите этаж</label>
-            <select id="floor">
+            <select multiple id="floor">
                 <optgroup disabled label="Первый этаж"></optgroup>
                 <option value="2">Второй этаж</option>
                 <option value="3">Третий этаж</option>
@@ -95,10 +95,11 @@
                 <option value="5">Девятый этаж</option>
                 <optgroup disabled label="Десятый этаж"></optgroup>
             </select>
+    <br>
+    <div>
+        <button type="submit">Отправить заявку</button>
+    </div>
 </form>
-        <br>
-        <div>
-            <button type="submit">Отправить заявку</button>
-        </div>
+
 </body>
 </html>
