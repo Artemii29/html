@@ -1,0 +1,12 @@
+.menu{
+    display:flex;
+    align-self: center;
+}
+.menu a{
+    text-decoration: none;
+    color:#a82be2;
+    padding: 8px 25px;
+}
+.menu a:hover{
+    background-color:#b39ddb;
+}

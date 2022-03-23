@@ -1,0 +1,16 @@
+.menu{
+    display:flex;
+    align-self: center;
+}
+.menu a{
+    text-decoration: none;
+    color:#a82be2;
+    padding: 8px 400px;
+}
+.menu a:hover{
+    background-color:#b39ddb;
+}
+.vertical{
+    flex-direction: column;
+    align-items: center;
+}
